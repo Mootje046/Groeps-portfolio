@@ -1,0 +1,95 @@
+body{
+    background-color: #1d1f34;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container{
+    width: 280px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.balk{
+    width: 280px;
+    height: 100%;
+    background-color: #242b3e;
+    box-shadow: #e39f0e 0px 0px 50px 0px;
+}
+
+.groepsnaam{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 6%;
+    left: 3.7%;
+}
+
+.functie{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+    position: absolute;
+    top: 10%;
+    left: 3.7%;
+}
+
+.buttons-container{
+    min-height: 50%;
+}
+
+.homepage-btn{
+    background-color:#485969;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 30%;
+    left: 3.7%;
+}
+
+
+.projects-btn{
+    background-color:#485969;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 38%;
+    left: 3.7%;
+}
+
+.team-btn{
+    background-color:#485969;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 46%;
+    left: 3.7%;
+}
+
+.contact-btn{
+    background-color:#485969;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 54%;
+    left: 3.7%;
+}
