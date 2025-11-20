@@ -32,6 +32,9 @@ body{
     position: absolute;
     top: 6%;
     left: 25%;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 600ms cubic-bezier(.2,.9,.2,1), opacity 420ms ease;
 }
 
 :root{
@@ -65,10 +68,16 @@ body{
     padding: 10px 20px;
     position: absolute;
     top: 30%;
-    left: 10%;
+    left: 15%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
-
+ 
+.homepage-btn:hover{
+   background-color:#e39f0e;
+   transform: scale(1.1);
+}
+ 
+ 
 .projects-btn{
     background-color:#485969;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -79,9 +88,15 @@ body{
     padding: 10px 20px;
     position: absolute;
     top: 38%;
-     left: 10%;
+    left: 15%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
+ 
+.projects-btn:hover{
+   background-color:#e39f0e;
+   transform: scale(1.1);
+}
+ 
 .team-btn{
     background-color:#485969;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -92,9 +107,15 @@ body{
     padding: 10px 20px;
     position: absolute;
     top: 46%;
-    left: 10%;
+    left: 15%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
+ 
+.team-btn:hover{
+   background-color:#e39f0e;
+   transform: scale(1.1);
+}
+ 
 .contact-btn{
     background-color:#485969;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -105,11 +126,15 @@ body{
     padding: 10px 20px;
     position: absolute;
     top: 54%;
-    left: 10%;
+    left: 15%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
-.contact-btn :hover{
-    background-color: #0962bb;
-}   
+ 
+.contact-btn:hover{
+   background-color:#e39f0e;
+   transform: scale(1.1);
+}
+ 
 main {
 margin-left: 19%;
 padding: 4%;
@@ -122,16 +147,35 @@ right: auto;
 width: 85%;
 background: #2c2f48;
 border-radius: 2.5%;
-box-shadow: 0 4% 10% black;
+box-shadow: #e39f0e 0px 0px 50px 0px;
 padding: 5% 4%;
 text-align: center;
 color: black;
 position: relative;
-overflow: hidden;
 transition: max-height 420ms cubic-bezier(.2,.9,.2,1), box-shadow 300ms;
 max-height: 40%;
+transform: translateX(-100%);
+opacity: 0;
+  transition: transform 700ms cubic-bezier(.2,.9,.2,1), opacity 420ms ease;
 }
 
+.blok.is-visible {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.blok.expaned.blok.is-visible{
+transform: translateX(0%)
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blok,
+  .blok.is-visible {
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
 .extra-content {
 max-height: 0;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -154,13 +198,15 @@ padding: 1% 2%;
 border-radius: 0.8%;
 cursor: pointer;
 font-family: inherit;
-font-size: 110%
+font-size: 110%;
+
 }
 .expand-btn:hover {
 background-color: #e39f0e;
 transition: all 0.5s ease;
 box-shadow: 0 8px 20px rgba(227,159,14,0.25), 0 0 40px rgba(227,159,14,0.12);
 transform: translateY(-2px);
+transform: scale(1.1);
 }
 
 .contact-btn:hover {background-color: #e39f0e;
@@ -184,17 +230,18 @@ transform: translateY(-2px);}
 transition: all 0.5s ease;
 box-shadow: 0 8px 20px rgba(227,159,14,0.25), 0 0 40px rgba(227,159,14,0.12);
 transform: translateY(-2px);}
+
 .blok h1 {
 margin: 0;
   font-size: clamp(1.8rem, 5vw, 3.6rem);
  color:#ffffff;
 letter-spacing: -0.02em;
 }
-
 .blok p {
-margin-top: 2%;
- color:#ffffff;
-  font-size: 1.05rem;
+    font-size: 130%;
+    line-height: 1.6;
+    color: #ffffff;
+    box-shadow: #e39f0e 
 }
 
 @media (max-width: 720px){
@@ -238,4 +285,38 @@ margin-top: 2%;
 @media (max-width:420px){
     .blok{ padding: 4%; width: 94%; }
 }
+
+.typewriter{
+color: white;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+display: inline-block;
+overflow: hidden;
+white-space: nowrap;
+width: 0;
+border-right: 0.15rem solid white;
+letter-spacing: 0.02rem;
+animation: typing 2400ms steps(26, end) forwards,
+blink 800ms steps(1, end) infinite;
+font-size: 300%;
+
+}
+
+@keyframes typing {
+from { width: 0; }
+to { width: 100%; }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .typewriter {
+    animation: none;
+    width: auto;
+    border-right: none;
+  }
+}
+
 
