@@ -128,7 +128,8 @@ body{
     background-color: #242b3e;
     border-color: white;
     border-width: 10px;
-    height: 400px;
+    min-height: 420px;
+    height: auto;
     width: 65%;
     align-items: center;
     position: relative;
@@ -137,6 +138,19 @@ body{
     margin-bottom: 3%;
     left: 26%;
     box-shadow: #e39f0e 0px 0px 20px 0px;
+    padding-bottom: 36px;
+}
+
+html.js .team-container{
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 600ms ease, transform 600ms ease;
+    will-change: opacity, transform;
+}
+
+html.js .team-container.is-visible{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .project-foto{
@@ -145,6 +159,78 @@ body{
     left: 50px;
     border-radius: 10px;
     width: 30%;
+}
+
+.project-progress{
+    position: relative;
+    top: -9vh;
+    left: 38%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.progress-item{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.progress-label{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.6px;
+    color: #d8deef;
+}
+
+.progress-value{
+    color: #f5b96a;
+    font-weight: 600;
+}
+
+.progress-track{
+    width: 100%;
+    height: 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-fill{
+    position: relative;
+    display: block;
+    width: var(--target, 0%);
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #f5c469, #f49b3f, #ff4b6e);
+    box-shadow: 0 0 14px rgba(227, 159, 14, 0.5);
+}
+
+html.js .team-container .progress-fill{
+    width: 0%;
+    transition: width 1.1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html.js .team-container.is-visible .progress-fill{
+    width: var(--target, 0%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.js .team-container .progress-fill,
+  html.js .team-container.is-visible .progress-fill{
+    transition: none !important;
+    width: var(--target, 0%);
+  }
+  html.js .team-container,
+  html.js .team-container.is-visible{
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 }
 
 .h1{
@@ -194,14 +280,8 @@ body{
     font-size: 20px;
     padding: 10px 20px;
     position: absolute;
-    top: 72%;
+    top: 75%;
     left: 38%;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.link-btn:hover{
-   background-color:#e39f0e;
-   transform: scale(1.1);
 }
 
 /* ==============
@@ -229,6 +309,11 @@ body{
     width: 28%;
     top: 120px;
     left: 40px;
+  }
+  .project-progress{
+    top: -12vh;
+    left: 38%;
+    width: 44%;
   }
   .h1{
     font-size: 44px;
@@ -268,6 +353,11 @@ body{
     width: 26%;
     top: 110px;
     left: 30px;
+  }
+  .project-progress{
+    top: -10vh;
+    left: 36%;
+    width: 46%;
   }
   .h1{
     font-size: 36px;
