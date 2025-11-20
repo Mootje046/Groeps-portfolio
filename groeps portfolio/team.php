@@ -35,7 +35,7 @@
       <img src="images/luca.jpg" alt="luca" class="luca-foto" loading="lazy" width="300" height="300">
       <div class="h1">Luca Piano</div>
       <div class="scheiding1"></div>
-      <div class="h2">My name is Luca Piano, 18 years old and live in Sittard. and I am a second-year Software Development student at Vista College Maastricht. I am passionate about technology, coding, and building creative digital solutions.
+      <div class="h2">My name is Luca Piano, 18 years old and live in Sittard. I am a second-year Software Development student at Vista College Maastricht. I am passionate about technology, coding, and building creative digital solutions.
 
 Outside of my studies, I enjoy working out and staying active, which helps me stay focused and disciplined in both my personal life and my projects.</div>
       <div class="languages"><span>Languages:</span> Dutch · English · Italian</div>
@@ -46,7 +46,7 @@ Outside of my studies, I enjoy working out and staying active, which helps me st
       <img src="images/sem.jpg" alt="milo" class="luca-foto" loading="lazy" width="300" height="300">
       <div class="h1">Sem Janssen</div>
       <div class="scheiding1"></div>
-      <div class="h2">My name is Sem Janssen. I am a 17 old software developer student at Vista College Maastricht. right now i live in Kerkrade. I enjoy watching sports, especially Formula 1 and football. In my free time, I like to stay active by going to the gym.</div>
+      <div class="h2">My name is Sem Janssen. I am 17 years old and a second-year Software Development student at Vista College Maastricht. Right now i live in Kerkrade. I enjoy watching sports, especially Formula 1 and football. In my free time, I like to stay active by going to the gym.</div>
       <div class="languages"><span>Languages:</span> Dutch · English </div>
       <div class="scheiding2"></div>
 </div>
