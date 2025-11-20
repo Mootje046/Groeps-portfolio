@@ -194,8 +194,14 @@ body{
     font-size: 20px;
     padding: 10px 20px;
     position: absolute;
-    top: 75%;
+    top: 72%;
     left: 38%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.link-btn:hover{
+   background-color:#e39f0e;
+   transform: scale(1.1);
 }
 
 /* ==============
