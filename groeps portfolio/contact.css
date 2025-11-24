@@ -2,6 +2,7 @@ body{
     background-color: #1d1f34;
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 .menu-container{
@@ -10,6 +11,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
 }
 
 .balk{
@@ -25,7 +27,7 @@ body{
     font-size: 14px;
     position: absolute;
     top: 6%;
-    left: 3.7%;
+    left: 15%;
 }
 
 .functie{
@@ -34,7 +36,7 @@ body{
     font-size: 10px;
     position: absolute;
     top: 10%;
-    left: 3.7%;
+    left: 15%;
 }
 
 .buttons-container{
@@ -51,7 +53,7 @@ body{
     padding: 10px 20px;
     position: absolute;
     top: 30%;
-    left: 3.7%;
+    left: 15%;
 }
 
 
@@ -65,7 +67,7 @@ body{
     padding: 10px 20px;
     position: absolute;
     top: 38%;
-    left: 3.7%;
+    left: 15%;
 }
 
 .team-btn{
@@ -78,7 +80,7 @@ body{
     padding: 10px 20px;
     position: absolute;
     top: 46%;
-    left: 3.7%;
+    left: 15%;
 }
 
 .contact-btn{
@@ -91,5 +93,19 @@ body{
     padding: 10px 20px;
     position: absolute;
     top: 54%;
-    left: 3.7%;
+    left: 15%;
+}
+
+.container-conact{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+}
+
+.block-midel{
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: translate(-50%, -50%);
 }
